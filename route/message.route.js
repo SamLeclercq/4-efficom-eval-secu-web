@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const messageController = require('../controller/message.controller.js');
 const auth = require('../middleware/auth.middleware.js');
-
+const limiter = require('../middleware/limiting.js');
 router.get('/', messageController.getAll);
 router.get('/:id', messageController.getById);
 
