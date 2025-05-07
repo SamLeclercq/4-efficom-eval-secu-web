@@ -34,7 +34,7 @@ const signIn = async (req,res,next) => {
         });
         res.status(201).json(result);
     } catch (e) {
-        res.status(400).json({ error: e.message });
+        res.status(400).json({ error: "Erreur" });
     }
 }
 
