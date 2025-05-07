@@ -17,7 +17,8 @@ const login = (req, res, next) => {
             id: user.id,
             email: user.email,
             roles: user.roles
-        }, "ZXZhbCBzZWN1IHdlYg==")
+        }, process.env.JWT_SECRET, {
+})
     });
 }
 
